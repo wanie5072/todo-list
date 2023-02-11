@@ -81,9 +81,9 @@ function swapItems(fromIndex, toIndex){
 
 function checkOrder() {
     listItems.forEach((listItem, index) => {
-        const personName = listItem.querySelector('.draggable').innerText.trim();
+        const todoName = listItem.querySelector('.draggable').innerText.trim();
 
-        if (personName !== richestPeople[index]) {
+        if (todoName !== todo[index]) {
             listItem.classList.add('wrong');
         }
         else {
